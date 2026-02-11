@@ -1,0 +1,183 @@
+/* Game-Specific Styles */
+
+.game-area {
+    background: var(--cream);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px 0;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.instruction {
+    font-size: 1.3rem;
+    color: var(--dark);
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+    background: #FFF3CD;
+    border-radius: 15px;
+    border-left: 5px solid var(--yellow);
+}
+
+.complete-btn {
+    padding: 15px 40px;
+    background: var(--green);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.complete-btn:hover {
+    transform: scale(1.1);
+    background: var(--teal);
+}
+
+.success-message {
+    background: linear-gradient(135deg, var(--green), var(--teal));
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    animation: bounceIn 0.6s ease;
+}
+
+/* Family Cards */
+.family-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.family-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.family-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.family-card .emoji {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.family-card .name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--pink);
+}
+
+/* Puzzle */
+.puzzle-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.puzzle-reveal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    transition: clip-path 0.5s ease;
+}
+
+/* Options */
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.option-btn {
+    padding: 20px;
+    background: white;
+    border: 3px solid var(--purple);
+    border-radius: 15px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--dark);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option-btn:hover {
+    background: var(--purple);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Counting */
+.counting-hearts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    max-width: 500px;
+}
+
+.counting-hearts .heart {
+    font-size: 3rem;
+    animation: heartbeat 1s ease infinite;
+}
+
+.number-input {
+    padding: 20px;
+    font-size: 2rem;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    border: 3px solid var(--blue);
+    border-radius: 15px;
+    text-align: center;
+    width: 150px;
+}
+
+/* Emotions */
+.emotion-display {
+    font-size: 8rem;
+    margin: 20px 0;
+    animation: bounce 1s ease infinite;
+}
+
+/* Confetti */
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background: var(--yellow);
+    position: absolute;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "english-learning-games",
+  "version": "1.0.0",
+  "description": "Interactive English learning games for kids with 15 fun activities",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000 -o",
+    "dev": "npx live-server --port=5500"
+  },
+  "keywords": [
+    "english",
+    "learning",
+    "kids",
+    "games",
+    "education",
+    "interactive"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
